@@ -44,7 +44,7 @@ export function Header() {
               className="bg-accent hover:bg-accent/90 text-accent-foreground"
               onClick={() => {
                 if (typeof window !== 'undefined') {
-                  window.open('https://panel-gheimatyar.vercel.app/signup', '_blank')
+                  window.open('https://panel-gheimatyar.netlify.app/signup', '_blank')
                 }
               }}
             >
@@ -82,7 +82,7 @@ export function Header() {
                   className="bg-accent hover:bg-accent/90 text-accent-foreground justify-start"
                   onClick={() => {
                     if (typeof window !== 'undefined') {
-                      window.open('https://panel-gheimatyar.vercel.app/signup', '_blank')
+                      window.open('https://panel-gheimatyar.netlify.app/signup', '_blank')
                     }
                   }}
                 >

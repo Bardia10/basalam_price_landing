@@ -295,7 +295,7 @@ export default function PersianLanding() {
                 whileTap={{ scale: 0.98 }}
                 onClick={() => {
                   if (typeof window !== 'undefined') {
-                    window.open('https://panel-gheimatyar.vercel.app/signup', '_blank')
+                    window.open('https://panel-gheimatyar.netlify.app/signup', '_blank')
                   }
                 }}
                 className="bg-gradient-to-r from-orange-500 to-yellow-500 text-white font-bold text-sm sm:text-base md:text-lg lg:text-xl px-6 py-2 sm:px-8 sm:py-3 lg:px-10 lg:py-4 rounded-xl hover:shadow-orange-500/20 transition-all duration-300 flex items-center gap-2 mx-auto shadow-sm leading-7 cursor-pointer"

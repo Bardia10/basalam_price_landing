@@ -19,7 +19,7 @@ export function CTASection() {
               className="bg-accent hover:bg-accent/90 text-accent-foreground px-8 py-3 text-lg"
               onClick={() => {
                 if (typeof window !== 'undefined') {
-                  window.open('https://panel-gheimatyar.vercel.app/signup', '_blank')
+                  window.open('https://panel-gheimatyar.netlify.app/signup', '_blank')
                 }
               }}
             >
