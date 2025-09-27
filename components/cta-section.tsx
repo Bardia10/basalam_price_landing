@@ -14,7 +14,15 @@ export function CTASection() {
             and see the difference automation can make.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-            <Button size="lg" className="bg-accent hover:bg-accent/90 text-accent-foreground px-8 py-3 text-lg">
+            <Button 
+              size="lg" 
+              className="bg-accent hover:bg-accent/90 text-accent-foreground px-8 py-3 text-lg"
+              onClick={() => {
+                if (typeof window !== 'undefined') {
+                  window.open('https://panel-gheimatyar.vercel.app/signup', '_blank')
+                }
+              }}
+            >
               Start Free Trial
               <ArrowRight className="ml-2 h-5 w-5" />
             </Button>

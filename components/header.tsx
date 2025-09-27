@@ -40,7 +40,16 @@ export function Header() {
             <Button variant="ghost" className="text-muted-foreground hover:text-foreground">
               Sign In
             </Button>
-            <Button className="bg-accent hover:bg-accent/90 text-accent-foreground">Get Started</Button>
+            <Button 
+              className="bg-accent hover:bg-accent/90 text-accent-foreground"
+              onClick={() => {
+                if (typeof window !== 'undefined') {
+                  window.open('https://panel-gheimatyar.vercel.app/signup', '_blank')
+                }
+              }}
+            >
+              Get Started
+            </Button>
           </div>
 
           {/* Mobile Menu Button */}
@@ -69,7 +78,14 @@ export function Header() {
                 <Button variant="ghost" className="justify-start">
                   Sign In
                 </Button>
-                <Button className="bg-accent hover:bg-accent/90 text-accent-foreground justify-start">
+                <Button 
+                  className="bg-accent hover:bg-accent/90 text-accent-foreground justify-start"
+                  onClick={() => {
+                    if (typeof window !== 'undefined') {
+                      window.open('https://panel-gheimatyar.vercel.app/signup', '_blank')
+                    }
+                  }}
+                >
                   Get Started
                 </Button>
               </div>

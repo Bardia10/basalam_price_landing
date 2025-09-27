@@ -293,7 +293,12 @@ export default function PersianLanding() {
                   boxShadow: "0 20px 40px rgba(0, 0, 0, 0.2)",
                 }}
                 whileTap={{ scale: 0.98 }}
-                className="bg-gradient-to-r from-orange-500 to-yellow-500 text-white font-bold text-sm sm:text-base md:text-lg lg:text-xl px-6 py-2 sm:px-8 sm:py-3 lg:px-10 lg:py-4 rounded-xl hover:shadow-orange-500/20 transition-all duration-300 flex items-center gap-2 mx-auto shadow-sm leading-7"
+                onClick={() => {
+                  if (typeof window !== 'undefined') {
+                    window.open('https://panel-gheimatyar.vercel.app/signup', '_blank')
+                  }
+                }}
+                className="bg-gradient-to-r from-orange-500 to-yellow-500 text-white font-bold text-sm sm:text-base md:text-lg lg:text-xl px-6 py-2 sm:px-8 sm:py-3 lg:px-10 lg:py-4 rounded-xl hover:shadow-orange-500/20 transition-all duration-300 flex items-center gap-2 mx-auto shadow-sm leading-7 cursor-pointer"
               >
                 <span>همین الان امتحان کن</span>
                 <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 lg:w-6 lg:h-6" />
