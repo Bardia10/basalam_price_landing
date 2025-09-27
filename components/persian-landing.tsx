@@ -20,6 +20,8 @@ export default function PersianLanding() {
   const springY = useSpring(mouseY, { stiffness: 100, damping: 30 })
 
   useEffect(() => {
+    if (typeof window === 'undefined') return
+    
     const handleMouseMove = (e: MouseEvent) => {
       mouseX.set(e.clientX)
       mouseY.set(e.clientY)
@@ -111,8 +113,8 @@ export default function PersianLanding() {
 
       <motion.div
         style={{
-          x: useTransform(springX, [0, window.innerWidth || 1920], [-15, 15]),
-          y: useTransform(springY, [0, window.innerHeight || 1080], [-15, 15]),
+          x: useTransform(springX, [0, typeof window !== 'undefined' ? window.innerWidth : 1920], [-15, 15]),
+          y: useTransform(springY, [0, typeof window !== 'undefined' ? window.innerHeight : 1080], [-15, 15]),
         }}
         variants={floatingVariants}
         animate="animate"
