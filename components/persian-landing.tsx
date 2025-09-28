@@ -89,7 +89,7 @@ export default function PersianLanding() {
   return (
     <div
       ref={containerRef}
-      className="min-h-screen bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 relative overflow-hidden"
+      className="min-h-screen bg-gradient-to-br from-gray-50 via-white to-gray-100 relative overflow-hidden"
       dir="rtl"
     >
       <motion.div style={{ y: backgroundY }} className="absolute inset-0">
@@ -173,7 +173,7 @@ export default function PersianLanding() {
               initial={{ opacity: 0, scale: 0.8 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.6, delay: 0.5 }}
-              className="block mt-2 sm:mt-4 text-white text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl"
+              className="block mt-2 sm:mt-4 text-gray-800 text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl"
             >
               یار همیشگی در مسیر{" "}
               <span className="bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
@@ -184,7 +184,7 @@ export default function PersianLanding() {
 
           <motion.p
             variants={itemVariants}
-            className="text-base sm:text-lg md:text-xl lg:text-2xl text-gray-300 mb-4 sm:mb-6 leading-relaxed max-w-xs sm:max-w-lg md:max-w-2xl lg:max-w-3xl mx-auto"
+            className="text-base sm:text-lg md:text-xl lg:text-2xl text-gray-600 mb-4 sm:mb-6 leading-relaxed max-w-xs sm:max-w-lg md:max-w-2xl lg:max-w-3xl mx-auto"
           >
             با یک نگاه، رقبا را ببینید و همیشه انتخاب درست داشته باشید.
           </motion.p>
@@ -224,7 +224,7 @@ export default function PersianLanding() {
             },
           ].map((feature, index) => (
             <motion.div key={index} variants={cardVariants}>
-              <Card className="group rounded-xl border-0 bg-white/5 backdrop-blur-sm p-3 sm:p-4 lg:p-5 hover:bg-white/8 transition-all duration-300 h-full">
+              <Card className="group rounded-xl border border-gray-200 bg-white/80 backdrop-blur-sm p-3 sm:p-4 lg:p-5 hover:bg-white/90 transition-all duration-300 h-full shadow-sm hover:shadow-md">
                 <CardContent className="flex flex-col items-center text-center p-0 h-full">
                   <motion.div
                     whileHover={{ scale: 1.05 }}
@@ -234,7 +234,7 @@ export default function PersianLanding() {
                     <feature.icon className="w-5 h-5 sm:w-6 sm:h-6 lg:w-7 lg:h-7 text-white" />
                   </motion.div>
 
-                  <h3 className="text-sm sm:text-base lg:text-lg font-bold mb-2 text-white leading-tight">
+                  <h3 className="text-sm sm:text-base lg:text-lg font-bold mb-2 text-gray-800 leading-tight">
                     {feature.title}
                   </h3>
 
@@ -256,32 +256,35 @@ export default function PersianLanding() {
         >
           <motion.div
             variants={itemVariants}
-            className="relative bg-gradient-to-r from-slate-800 to-slate-700 rounded-xl sm:rounded-2xl p-6 sm:p-8 lg:p-10 shadow-2xl overflow-hidden border border-slate-600"
+            className="relative bg-gradient-to-br from-blue-50 via-yellow-50 to-white rounded-xl sm:rounded-2xl p-6 sm:p-8 lg:p-10 shadow-xl overflow-hidden border border-blue-100"
             style={{
-              background: "linear-gradient(135deg, #1e293b 0%, #334155 100%)",
-              boxShadow: "0 25px 50px rgba(0, 0, 0, 0.3), inset 0 1px 0 rgba(255, 255, 255, 0.1)",
+              background: "linear-gradient(135deg, #dbeafe 0%, #fef9c3 50%, #ffffff 100%)",
+              boxShadow: "0 25px 50px rgba(59, 130, 246, 0.15), 0 10px 25px rgba(250, 204, 21, 0.1)",
             }}
           >
-            <div className="absolute top-3 right-3 sm:top-4 sm:right-4 w-6 h-4 sm:w-8 sm:h-6 bg-gradient-to-r from-yellow-400 to-orange-400 rounded opacity-80" />
-            <div className="absolute top-3 right-10 sm:top-4 sm:right-14 w-6 h-4 sm:w-8 sm:h-6 bg-gradient-to-r from-orange-400 to-red-400 rounded opacity-60" />
+            <div className="absolute top-3 right-3 sm:top-4 sm:right-4 w-6 h-4 sm:w-8 sm:h-6 bg-gradient-to-r from-blue-400 to-blue-500 rounded opacity-70" />
+            <div className="absolute top-3 right-10 sm:top-4 sm:right-14 w-6 h-4 sm:w-8 sm:h-6 bg-gradient-to-r from-yellow-400 to-yellow-500 rounded opacity-80" />
+            <div className="absolute top-8 right-6 sm:top-10 sm:right-8 w-4 h-3 sm:w-6 sm:h-4 bg-gradient-to-r from-indigo-300 to-blue-300 rounded opacity-60" />
+            <div className="absolute bottom-20 left-4 sm:bottom-24 sm:left-6 w-3 h-3 sm:w-4 sm:h-4 bg-gradient-to-r from-yellow-300 to-amber-400 rounded-full opacity-70" />
+            <div className="absolute top-16 left-8 sm:top-20 sm:left-12 w-2 h-2 sm:w-3 sm:h-3 bg-gradient-to-r from-blue-300 to-sky-400 rounded-full opacity-60" />
 
-            <div className="absolute bottom-3 left-3 sm:bottom-4 sm:left-4 text-slate-400 text-xs font-mono">
+            <div className="absolute bottom-3 left-3 sm:bottom-4 sm:left-4 text-blue-400 text-xs font-mono">
               **** **** **** 1234
             </div>
 
-            <div className="absolute bottom-3 right-3 sm:bottom-4 sm:right-4 text-slate-400 text-xs">12/25</div>
+            <div className="absolute bottom-3 right-3 sm:bottom-4 sm:right-4 text-blue-500 text-xs font-medium">12/25</div>
 
             <div className="relative z-10 pt-3 sm:pt-4">
               <motion.h3
                 variants={itemVariants}
-                className="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl font-bold text-white mb-2 sm:mb-3 leading-tight"
+                className="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl font-bold text-gray-800 mb-2 sm:mb-3 leading-tight"
               >
                 وقتشه که تصمیم‌های قیمتی هوشمند بگیری!
               </motion.h3>
 
               <motion.p
                 variants={itemVariants}
-                className="text-sm sm:text-base md:text-lg lg:text-xl text-slate-300 mb-4 sm:mb-6 leading-relaxed"
+                className="text-sm sm:text-base md:text-lg lg:text-xl text-gray-600 mb-4 sm:mb-6 leading-relaxed"
               >
                 به جمع هزاران کسب‌وکار موفق بپیوندید که با قیمت یار رقابت را برده‌اند
               </motion.p>
@@ -300,7 +303,7 @@ export default function PersianLanding() {
                 }}
                 className="bg-gradient-to-r from-orange-500 to-yellow-500 text-white font-bold text-sm sm:text-base md:text-lg lg:text-xl px-6 py-2 sm:px-8 sm:py-3 lg:px-10 lg:py-4 rounded-xl hover:shadow-orange-500/20 transition-all duration-300 flex items-center gap-2 mx-auto shadow-sm leading-7 cursor-pointer"
               >
-                <span>همین الان امتحان کن</span>
+                <span>همین الان شروع کن</span>
                 <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 lg:w-6 lg:h-6" />
               </motion.button>
             </div>
