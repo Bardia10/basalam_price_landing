@@ -286,7 +286,7 @@ export default function PersianLanding() {
                 variants={itemVariants}
                 className="text-sm sm:text-base md:text-lg lg:text-xl text-gray-600 mb-4 sm:mb-6 leading-relaxed"
               >
-                به جمع هزاران کسب‌وکار موفق بپیوندید که با قیمت یار رقابت را برده‌اند
+                به جمع کسب‌وکارهای موفق بپیوندید که با قیمت یار رقابت را برده‌اند
               </motion.p>
 
               <motion.button
