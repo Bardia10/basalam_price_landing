@@ -11,6 +11,9 @@ export const metadata: Metadata = {
   description:
     "با قیمت یار، رقبا را شناسایی کنید و قیمت‌گذاری هوشمند داشته باشید. پلتفرم حرفه‌ای برای مقایسه قیمت و تحلیل بازار.",
   generator: "v0.app",
+  icons: {
+    icon: "/favicon.png",
+  },
 }
 
 export default function RootLayout({

@@ -184,7 +184,7 @@ export default function PersianLanding() {
 
           <motion.p
             variants={itemVariants}
-            className="text-base sm:text-lg md:text-xl lg:text-2xl text-gray-600 mb-4 sm:mb-6 leading-relaxed max-w-xs sm:max-w-lg md:max-w-2xl lg:max-w-3xl mx-auto"
+            className="text-base sm:text-lg md:text-xl lg:text-2xl text-gray-600 mb-4 sm:mb-6 leading-relaxed max-w-xs sm:max-w-lg md:max-w-2xl lg:max-w-3xl mx-auto font-[Vazirmatn]"
           >
             با یک نگاه، رقبا را ببینید و همیشه انتخاب درست داشته باشید.
           </motion.p>
@@ -224,7 +224,7 @@ export default function PersianLanding() {
             },
           ].map((feature, index) => (
             <motion.div key={index} variants={cardVariants}>
-              <Card className="group rounded-xl border border-gray-200 bg-white/80 backdrop-blur-sm p-3 sm:p-4 lg:p-5 hover:bg-white/90 transition-all duration-300 h-full shadow-sm hover:shadow-md">
+              <Card className="group rounded-xl border border-gray-200 bg-white/80 backdrop-blur-sm p-3 sm:p-4 lg:p-5 hover:bg-white/90 transition-all duration-300 h-full shadow-sm hover:shadow-md font-[Vazirmatn]">
                 <CardContent className="flex flex-col items-center text-center p-0 h-full">
                   <motion.div
                     whileHover={{ scale: 1.05 }}
@@ -284,7 +284,7 @@ export default function PersianLanding() {
 
               <motion.p
                 variants={itemVariants}
-                className="text-sm sm:text-base md:text-lg lg:text-xl text-gray-600 mb-4 sm:mb-6 leading-relaxed"
+                className="text-sm sm:text-base md:text-lg lg:text-xl text-gray-600 mb-4 sm:mb-6 leading-relaxed font-[Vazirmatn]"
               >
                 به جمع کسب‌وکارهای موفق بپیوندید که با قیمت یار رقابت را برده‌اند
               </motion.p>
