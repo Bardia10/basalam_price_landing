@@ -186,7 +186,7 @@ export default function PersianLanding() {
             variants={itemVariants}
             className="text-base sm:text-lg md:text-xl lg:text-2xl text-gray-600 mb-4 sm:mb-6 leading-relaxed max-w-xs sm:max-w-lg md:max-w-2xl lg:max-w-3xl mx-auto font-[Vazirmatn]"
           >
-            با یک نگاه، رقبا را ببینید و همیشه انتخاب درست داشته باشید.
+            با یک نگاه، رقبا را ببینید و همیشه درست انتخاب کنید
           </motion.p>
         </motion.div>
 
@@ -207,19 +207,19 @@ export default function PersianLanding() {
             {
               icon: PieChart,
               title: "مقایسه سریع رقبا",
-              description: "محصول خود را انتخاب کنید و مشابه‌ترین محصولات رقبا را ببینید",
+              description: "محصول خود را با رقبا مقایسه کنید",
               gradient: "from-purple-500 to-pink-500",
             },
             {
               icon: Calculator,
-              title: "نمایش کمترین قیمت",
+              title: "آنالیز قیمت ها",
               description: "کمترین و میانگین قیمت رقبا را ببینید و مقایسه کنید",
               gradient: "from-emerald-500 to-teal-500",
             },
             {
               icon: TrendingDown,
               title: "شناسایی قیمت‌های نامناسب",
-              description: "محصولاتی که قیمتشان بالاتر از رقباست را پیدا کنید",
+              description: "محصولاتی که قیمتشان نسبت به رقبا مناسب نیست شناسایی کنید",
               gradient: "from-orange-500 to-yellow-500",
             },
           ].map((feature, index) => (
